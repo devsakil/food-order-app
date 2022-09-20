@@ -35,7 +35,8 @@ class HomePage extends StatelessWidget {
                     SizedBox(height: 5.w),
                     Text(
                       'What would you like to eat?',
-                      style: TextStyle(fontSize: 25.sp, fontWeight: FontWeight.bold),
+                      style: TextStyle(
+                          fontSize: 25.sp, fontWeight: FontWeight.bold),
                     ),
                     SizedBox(height: 5.w),
                     TextField(
@@ -79,7 +80,8 @@ class HomePage extends StatelessWidget {
                 padding: EdgeInsets.only(left: 4.w),
                 child: Text(
                   'Explore from categories',
-                  style: TextStyle(fontSize: 13.sp, fontWeight: FontWeight.bold),
+                  style:
+                      TextStyle(fontSize: 13.sp, fontWeight: FontWeight.bold),
                 ),
               ),
               SizedBox(height: 5.w),
@@ -87,7 +89,7 @@ class HomePage extends StatelessWidget {
                 scrollDirection: Axis.horizontal,
                 child: Row(
                   children: [
-                    SizedBox(width: 3.w),
+                    SizedBox(width: 4.w),
                     const CatItem(
                       image: 'assets/donut-cat.jpeg',
                       title: 'New this week',

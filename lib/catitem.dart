@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 
@@ -16,12 +15,19 @@ class CatItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(right: 4.w),
+      height: 45.w,
       width: width ?? 50.w,
-      height: 40.w,
+      margin: EdgeInsets.only(bottom: 3.w, right: 4.w),
       decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(10),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(.05),
+            blurRadius: 10,
+            spreadRadius: 5,
+          ),
+        ],
+        borderRadius: BorderRadius.circular(4.w),
+        color: Theme.of(context).cardColor,
       ),
       child: ClipRRect(
         borderRadius: BorderRadius.circular(10),
