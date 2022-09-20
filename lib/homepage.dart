@@ -45,7 +45,7 @@ class HomePage extends StatelessWidget {
                   ],
                 ),
               ),
-              SizedBox(height: 7.w),
+              SizedBox(height: 5.w),
               SizedBox(
                 width: 100.w,
                 height: 70.w,
@@ -78,7 +78,7 @@ class HomePage extends StatelessWidget {
                       TextStyle(fontSize: 16.sp, fontWeight: FontWeight.bold),
                 ),
               ),
-              SizedBox(height: 7.w),
+              SizedBox(height: 5.w),
               SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(

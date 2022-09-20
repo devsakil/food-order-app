@@ -16,7 +16,7 @@ class ItemCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(bottom: 3.w, right: 4.w),
+      margin: EdgeInsets.only(bottom: 3.w, right: 4.w, top: 2.w),
       width: 50.w,
       decoration: BoxDecoration(
         color: Colors.blue,
@@ -65,7 +65,7 @@ class ItemCard extends StatelessWidget {
                           style: const TextStyle(color: Colors.white),
                         ),
                         Container(
-                          padding: EdgeInsets.all(4),
+                          padding: const EdgeInsets.all(4),
                           decoration: BoxDecoration(
                             color: Colors.white,
                             borderRadius: BorderRadius.circular(7),

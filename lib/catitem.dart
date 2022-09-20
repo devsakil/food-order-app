@@ -17,7 +17,7 @@ class CatItem extends StatelessWidget {
     return Container(
       height: 35.w,
       width: width ?? 50.w,
-      margin: EdgeInsets.only(bottom: 3.w, right: 4.w),
+      margin: EdgeInsets.only(bottom: 3.w, right: 4.w, top: 2.w),
       decoration: BoxDecoration(
         boxShadow: [
           BoxShadow(
@@ -47,7 +47,10 @@ class CatItem extends StatelessWidget {
             Center(
               child: Text(
                 title!,
-                style: Theme.of(context).textTheme.titleMedium,
+                style: TextStyle(
+                  fontSize: 12.sp,
+                  fontWeight: FontWeight.w600,
+                ),
               ),
             )
           ],
