@@ -16,12 +16,8 @@ class ItemCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(
-        bottom: 3.w,
-        right: 4.w,
-      ),
-      width: 40.w,
-      height: 60.w,
+      margin: EdgeInsets.only(bottom: 3.w, right: 4.w),
+      width: 50.w,
       decoration: BoxDecoration(
         color: Colors.blue,
         borderRadius: BorderRadius.circular(10),
@@ -37,10 +33,7 @@ class ItemCard extends StatelessWidget {
         borderRadius: BorderRadius.circular(10),
         child: Stack(
           children: [
-            Image.asset(
-              image!,
-              fit: BoxFit.cover,
-            ),
+            Image.asset(image!, fit: BoxFit.cover, width: 50.w),
             Container(
               padding: const EdgeInsets.all(8.0),
               decoration: BoxDecoration(
@@ -49,7 +42,7 @@ class ItemCard extends StatelessWidget {
                       end: Alignment.bottomCenter,
                       colors: [
                     Colors.transparent,
-                    Theme.of(context).primaryColor.withOpacity(.7)
+                    Colors.pink.withOpacity(.7)
                   ])),
               child: Column(
                   mainAxisAlignment: MainAxisAlignment.end,
@@ -69,19 +62,15 @@ class ItemCard extends StatelessWidget {
                       children: [
                         Text(
                           '\$ $price',
-                          style: const TextStyle(
-                            color: Colors.white,
-                          ),
+                          style: const TextStyle(color: Colors.white),
                         ),
                         Container(
+                          padding: EdgeInsets.all(4),
                           decoration: BoxDecoration(
                             color: Colors.white,
-                            borderRadius: BorderRadius.circular(5),
+                            borderRadius: BorderRadius.circular(7),
                           ),
-                          child: Icon(
-                            Icons.add,
-                            size: 17.sp,
-                          ),
+                          child: Icon(Icons.add, size: 15.sp),
                         )
                       ],
                     )

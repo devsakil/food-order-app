@@ -14,10 +14,7 @@ class HomePage extends StatelessWidget {
           SizedBox(
             width: 100.w,
             height: 100.h,
-            child: Image.asset(
-              'assets/bg.jpeg',
-              fit: BoxFit.fitHeight,
-            ),
+            child: Image.asset('assets/bg.jpeg', fit: BoxFit.fitHeight),
           ),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -42,19 +39,16 @@ class HomePage extends StatelessWidget {
                     TextField(
                       decoration: InputDecoration(
                         hintText: 'or type what you are looking',
-                        suffixIcon: Icon(
-                          Icons.search,
-                          size: 20.sp,
-                        ),
+                        suffixIcon: Icon(Icons.search, size: 20.sp),
                       ),
                     ),
-                    SizedBox(height: 8.w),
                   ],
                 ),
               ),
+              SizedBox(height: 7.w),
               SizedBox(
                 width: 100.w,
-                height: 60.w,
+                height: 70.w,
                 child: SingleChildScrollView(
                   scrollDirection: Axis.horizontal,
                   child: Row(
@@ -75,16 +69,16 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(height: 8.w),
+              SizedBox(height: 7.w),
               Padding(
                 padding: EdgeInsets.only(left: 4.w),
                 child: Text(
                   'Explore from categories',
                   style:
-                      TextStyle(fontSize: 13.sp, fontWeight: FontWeight.bold),
+                      TextStyle(fontSize: 16.sp, fontWeight: FontWeight.bold),
                 ),
               ),
-              SizedBox(height: 5.w),
+              SizedBox(height: 7.w),
               SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(

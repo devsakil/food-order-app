@@ -15,7 +15,7 @@ class CatItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 45.w,
+      height: 35.w,
       width: width ?? 50.w,
       margin: EdgeInsets.only(bottom: 3.w, right: 4.w),
       decoration: BoxDecoration(
@@ -37,7 +37,7 @@ class CatItem extends StatelessWidget {
           children: [
             SizedBox(
               width: width ?? 50.w,
-              height: 30.w,
+              height: 25.w,
               child: Image.asset(
                 image!,
                 fit: BoxFit.cover,
