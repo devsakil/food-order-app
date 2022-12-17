@@ -59,21 +59,16 @@ class HomePage extends StatelessWidget {
                 child: Row(
                   children: [
                     SizedBox(width: 4.w),
-                    ItemCard(
-                      name: 'Strawberry Frosted Peanut',
-                      image: "donut1",
-                      price: '\$1.75',
-                    ),
-                    ItemCard(
-                      name: 'Strawberry Frosted Peanut',
-                      image: "donut2",
-                      price: '\$1.75',
-                    ),
-                    ItemCard(
-                      name: 'Strawberry Frosted Peanut',
-                      image: "donut3",
-                      price: '\$1.75',
-                    ),
+                    Row(
+                      children: List.generate(
+                        3,
+                        (index) => ItemCard(
+                          name: 'Strawberry Frosted Peanut',
+                          image: "donut${index + 1}",
+                          price: '\$1.75',
+                        ),
+                      ),
+                    )
                   ],
                 ),
               ),
