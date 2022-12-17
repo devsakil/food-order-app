@@ -1,6 +1,6 @@
 {
-    "name": "myapp",
-    "short_name": "myapp",
+    "name": "food_order_app",
+    "short_name": "food_order_app",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
